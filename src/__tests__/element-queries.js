@@ -26,6 +26,7 @@ test('get throws a useful error message', () => {
   const {
     getByLabelText,
     getByDisplayValue,
+    getById,
     getByPlaceholderText,
     getByText,
     getByTestId,
@@ -36,6 +37,13 @@ test('get throws a useful error message', () => {
   expect(() => getByLabelText('LucyRicardo'))
     .toThrowErrorMatchingInlineSnapshot(`
 "Unable to find a label with the text of: LucyRicardo
+
+[36m<div>[39m
+  [36m<div />[39m
+[36m</div>[39m"
+`)
+  expect(() => getById('LucyRicardo')).toThrowErrorMatchingInlineSnapshot(`
+"Unable to find an element by: [id=\\"LucyRicardo\\"]
 
 [36m<div>[39m
   [36m<div />[39m
@@ -413,6 +421,7 @@ test('getAll* matchers return an array', () => {
 test('getAll* matchers throw for 0 matches', () => {
   const {
     getAllByAltText,
+    getAllByClass,
     getAllByTestId,
     getAllByLabelText,
     getAllByDisplayValue,
@@ -426,6 +435,7 @@ test('getAll* matchers throw for 0 matches', () => {
   `)
   expect(() => getAllByTestId('nope')).toThrow()
   expect(() => getAllByTestId('abc')).toThrow()
+  expect(() => getAllByClass('abc')).toThrow()
   expect(() => getAllByAltText('nope')).toThrow()
   expect(() => getAllByLabelText('nope')).toThrow()
   expect(() => getAllByLabelText('no matches please')).toThrow()
