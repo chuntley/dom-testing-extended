@@ -1,10 +1,10 @@
 {
-  "name": "dom-testing-library",
+  "name": "dom-testing-extended",
   "version": "0.0.0-semantically-released",
   "description": "Simple and complete DOM testing utilities that encourage good testing practices.",
   "main": "dist/index.js",
-  "module": "dist/dom-testing-library.esm.js",
-  "umd:main": "dist/dom-testing-library.umd.js",
+  "module": "dist/dom-testing-extended.esm.js",
+  "umd:main": "dist/dom-testing-extended.umd.js",
   "source": "src/index.js",
   "typings": "typings",
   "keywords": [
@@ -18,7 +18,7 @@
     "end-to-end",
     "e2e"
   ],
-  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "author": "Chad Huntley <chadhuntley@gmail.com>",
   "license": "MIT",
   "engines": {
     "node": ">=8"
@@ -68,10 +68,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/testing-library/dom-testing-library.git"
+    "url": "https://github.com/chuntley/dom-testing-extended.git"
   },
   "bugs": {
-    "url": "https://github.com/testing-library/dom-testing-library/issues"
+    "url": "https://github.com/chuntley/dom-testing-extended/issues"
   },
-  "homepage": "https://github.com/testing-library/dom-testing-library#readme"
+  "homepage": "https://github.com/chuntley/dom-testing-extended#readme"
 }
