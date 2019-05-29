@@ -9,6 +9,6 @@
     "noEmit": true,
 
     "baseUrl": ".",
-    "paths": {"dom-testing-library": ["."]}
+    "paths": {"dom-testing-extended": ["."]}
   }
 }

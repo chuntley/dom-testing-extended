@@ -16,6 +16,10 @@ cases(
       query: /his/,
       html: `<input placeholder="his" /><input placeholder="history" />`,
     },
+    getById: {
+      query: /test/,
+      html: `<div id="test">his</div><div id="test">history</div>`,
+    },
     getByText: {
       query: /his/,
       html: `<div>his</div><div>history</div>`,
